@@ -63,3 +63,14 @@ console.log("The result is", result2);
 
 const anotherResult2 = calculate(2, 10, "*");
 console.log("Another result is", anotherResult2);
+
+function nFactorial(n) {
+  if (n > 0) {
+    return n * nFactorial(n - 1);
+  } else {
+    return 1;
+  }
+}
+
+const funkyNumber = nFactorial(7);
+console.log("7! = " + funkyNumber);
